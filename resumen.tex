@@ -137,6 +137,31 @@ El valor exacto de un incremento esta dado por $\Delta z = F(x+\Delta x; y +\Del
   $$ \dfrac{\partial w}{\partial y} =\dfrac{\partial w}{\partial x} \cdot \cancelto{0}{\dfrac{\partial x}{\partial y}}+\dfrac{\partial w}{\partial y}\cdot \cancelto{1}{\dfrac{\partial y}{\partial y}}+\dfrac{\partial w}{\partial z}\cdot \dfrac{\partial z}{\partial y}$$
   La $\dfrac{\partial y}{\partial x}= \dfrac{\partial x}{\partial y}=0 $ porque $x$ y $y$ son variables independientes y la derivada de una constante es 0.\\
 \end{itemize}
+\textbf{Extremos relativos:}\\
+Condición \textit{necesaria} para que haya un extremo:
+$$\dfrac{\partial z}{\partial x}=0$$
+$$\dfrac{\partial z}{\partial y}= 0$$
+Esto nos dará un sistema de ecuaciones y los valores que cumplan con la ecuación serán puntos críticos.\\
+Condición \textit{suficiente} El hessiano en ese punto nos dirá mas información sobre ese punto. Se define el Hessiano como:\\
+$$
+Hess =
+\begin{bmatrix}
+\dfrac{\partial ^2 z}{\partial x^2 } &  \dfrac{\partial ^2 z}{\partial y \partial x} \\
+\dfrac{\partial ^2 z}{\partial x \partial y} & \dfrac{\partial ^2 z}{\partial y^2}
+\end{bmatrix}
+$$
+\\
+Se calcula el determinante de la matriz, evaluado en el punto crítico entonces:
+\begin{itemize}
+\item Si $det(Hess) > 0$ hay un extremo.  En ese caso si $Hes_{11} = \dfrac{\partial ^2 z}{\partial x^2} > 0$ hay un mínimo relativo.  En cambio si $Hess_{11} =  \dfrac{\partial ^2 z}{\partial y^2} < 0$ hay un máximo relativo.
+
+\item Si $det(Hess) = 0$ el criterio no decide y debemos buscar otra forma de analizar el punto crítico.
+
+\item Si $det(Hess) < 0$ entonces hay un punto silla y por lo tanto no es extremo.
+\end{itemize}
+
+
+
   \textbf{Divergencia:} cambio de densidad en el movimiento de una partícula. Se define con la eq:
  $ \nabla  \cdot \vec{V} = Div \vec{V}$. En la figura \ref{fig:divergencia} se puede observar que quiere decir el escalar que nos dá de resultado.\\
 
@@ -198,11 +223,11 @@ Análogamente, la sumatoria de torque sobre un cuerpo equivale a la variación t
 \textbf{Momento Lineal} Magnitud \textcolor{red}{vectorial} e \textcolor{blue}{instantánea} que representa la cantidad de movimiento rectilíneo de un cuerpo. $\displaystyle \vec{p}=m \, \vec{v}$ \\
 
 \textbf{Momento Angular} Magnitud \textcolor{red}{vectorial} e \textcolor{blue}{instantánea} que representa la cantidad de movimiento angular de un cuerpo. La dirección del vector representa la dirección normal al plano donde se desarrolla la rotación.
-Existen dos formas de tener momento angular, intrínseco y orbital. El momento angular total es la suma de los dos. 
+Existen dos formas de tener momento angular, intrínseco y orbital. El momento angular total es la suma de los dos.
 
 \begin{itemize}
 	\item \textbf{$\vec{L}$ intrínseco:} o \textit{spin}, momento angular de un cuerpo rígido por tener velocidad angular instantánea respecto a su propio eje. $$\vec{L}_{spin} = I \, \vec{\omega}$$
-	
+
 	\item \textbf{$\vec{L}$ orbital:} Momento angular de un cuerpo por instantáneamente orbitar con un determinado momento lineal, a un radio vector $\vec{r}$ de un determinado eje. $$\vec{L}_{orbit} = \vec{r} \times \vec{p}$$
 \end{itemize}
 
@@ -217,4 +242,3 @@ El momento angular total de un cuerpo o sistema resulta la suma de ambas formas 
 
 
 \end{document}
-
