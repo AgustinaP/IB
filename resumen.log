@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2019.1.27)  29 JAN 2019 16:41
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2019.1.27)  29 JAN 2019 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -303,104 +303,23 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
+! I can't write on file `resumen.pdf'.
+(Press Enter to retry, or Control-D to exit; default file extension is `.pdf')
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.68 \newpage
+             
+*** (job aborted, file error in nonstop mode)
 
-] (./resumen.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write3
-\openout3 = `resumen.toc'.
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
-
- []
-
-File: divergencia.pdf Graphic file (type pdf)
-<use divergencia.pdf>
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-
- []
-
-[7] (./resumen.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-) ) 
+ 
 Here is how much of TeX's memory you used:
- 3984 strings out of 492956
- 50464 string characters out of 6139024
- 163067 words of memory out of 5000000
- 7922 multiletter control sequences out of 15000+600000
- 10988 words of font info for 56 fonts, out of 8000000 for 9000
+ 3918 strings out of 492956
+ 49356 string characters out of 6139024
+ 153067 words of memory out of 5000000
+ 7883 multiletter control sequences out of 15000+600000
+ 6279 words of font info for 30 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 41i,12n,43p,485b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on resumen.pdf (7 pages).
+ 41i,5n,43p,244b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
