@@ -9,6 +9,7 @@
 \date{\small{\today}}
 \usepackage{fancyhdr}
 \usepackage{afterpage}
+\usepackage{cancel}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{gris}{RGB}{220,220,220}
 
@@ -112,6 +113,24 @@ El valor exacto de un incremento esta dado por $\Delta z = F(x+\Delta x; y +\Del
   $$\vec{v}_{normalizado}= \dfrac{\vec{v}}{|\vec{v}|}$$
   \\
   La \textcolor{red}{derivada direccional máxima} es cuando la dirección es la del gradiente en ese punto, mientras que la \textcolor{blue}{derivada direccional mínima} es la misma dirección del gradiente pero de sentido contrario, esto se logra con la multiplicación punto del vector gradiente por el escalar (-1). La \textcolor{green}{derivada direccional nula} será usando un vector tal que sea perpendicular al vector en la derivada direccional máxima.\\
+  
+  \textbf{Regla de la cadena mutlivariable:}
+  Se divide en los siguientes casos:
+  \begin{itemize}
+    \item \textit{caso 1:} La funcion $F$ tiene como variable de entrada a $t/t \in \Re$, teniendo a dos variables intermedias $x(t) \wedge y(t)/ x \wedge y \in \Re $ y teniendo como salida una variable llamada $z/z\in \Re$, se define la derivada de $z$ con respecto a $t$ como:
+    $$\dfrac{dz}{dt}=\dfrac{\partial z}{\partial x}\cdot \dfrac{d x}{dt}+\dfrac{\partial z}{\partial y}\cdot \dfrac{dy}{dt}$$
+    \item \textit{caso 1 particular:}La funcion $F$ tiene como variable de entrada a $x/x \in \Re$, teniendo a dos variables intermedias $x(t) \wedge y(t)/ x \wedge y \in \Re $ y teniendo como salida una variable llamada $z/z\in \Re$, se define la derivada de $z$ con respecto a $x$ como:
+    $$\dfrac{dz}{dx}=\dfrac{\partial z}{\partial x}\cdot \cancelto{1}{\dfrac{d x}{dx}}+\dfrac{\partial z}{\partial y}\cdot \dfrac{dy}{dx}$$
+    \item \textit{caso 2:} La funcion $F$ tiene como variable de entradas a $u\wedge v/u\wedge v \in \Re$, teniendo a dos variables intermedias$x(t)\wedge y(t)/ x\wedge y \in \Re$ y como salida una sola variable llamada $z(x,y)/z \in \Re$, se define la derivada parcial de $z$ con respecto a $u$ como:
+    $$ \dfrac{\partial z}{\partial u} =\dfrac{\partial z}{\partial x} \cdot \dfrac{\partial x}{\partial u}+\dfrac{\partial z}{\partial y}\cdot \dfrac{\partial y}{\partial u}$$
+    Y se define la derivada parcial de $z$ con respecto a $v$ como:
+   $$ \dfrac{\partial z}{\partial v} =\dfrac{\partial z}{\partial x} \cdot \dfrac{\partial x}{\partial v}+\dfrac{\partial z}{\partial y}\cdot \dfrac{\partial y}{\partial v}$$
+
+    \item \textit{caso 2 particular:}La funcion $F$ tiene como variable de entradas a $u\wedge v/u \wedge v \in \Re$, teniendo a dos variables intermedias$u(t)\wedge y(t)/ u\wedge y \in \Re$ y como salida una sola variable llamada $z(x,y)/z \in \Re$, se define la derivada parcial de $z$ con respecto a $u$ como:
+    $$ \dfrac{\partial z}{\partial u} =\dfrac{\partial z}{\partial u} \cdot \cancelto{1}{\dfrac{\partial u}{\partial u}}+\dfrac{\partial z}{\partial y}\cdot \dfrac{\partial y}{\partial u}$$
+    Y se define la derivada parcial de $z$ con respecto a $v$ como:
+   $$ \dfrac{\partial z}{\partial v} =\dfrac{\partial z}{\partial u} \cdot \cancelto{0}{\dfrac{\partial u}{\partial v}}+\dfrac{\partial z}{\partial y}\cdot \dfrac{\partial y}{\partial v}$$
+   La $\dfrac{\partial u}{\partial v}=0 $ porque $u$ y $v$ son variables independientes y la derivada de una constante es 0.\\
 
   \textbf{Divergencia:} cambio de densidad en el movimiento de una partícula. Se define con la eq:
  $ \nabla  \cdot \vec{V} = Div \vec{V}$. En la figura \ref{fig:divergencia} se puede observar que quiere decir el escalar que nos dá de resultado.\\
@@ -145,8 +164,8 @@ $$T(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x
 
 
 \section{Mecánica Clásica}
-\textbf{Ley de Newton:} La sumatoria de fuerzas sobre un cuerpo equivale a la variación de su momento lineal respecto al tiempo.\\ 
-$$\sum{\vec{F}} = \dfrac{d\vec{p}}{dt} = m \, \dfrac{d\vec{v}}{dt} + \dfrac{dm}{dt} \, \vec{v}$$. 
+\textbf{Ley de Newton:} La sumatoria de fuerzas sobre un cuerpo equivale a la variación de su momento lineal respecto al tiempo.\\
+$$\sum{\vec{F}} = \dfrac{d\vec{p}}{dt} = m \, \dfrac{d\vec{v}}{dt} + \dfrac{dm}{dt} \, \vec{v}$$.
 Solo en el caso de masa invariante en el tiempo la expresión se reduce a $\sum {\vec{F}} = m \, \vec{a}$\\
 
 Análogamente, la sumatoria de torque sobre un cuerpo equivale a la variación temporal de su momento angular, en caso de momento de momento de inercia invariante en el tiempo reducida a $\sum {\vec{T}} = I \, \vec{\gamma}$\\
