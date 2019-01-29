@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.16)  29 JAN 2019 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.16)  29 JAN 2019 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,72 +658,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
-[4]
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
 <divergencia.pdf, id=27, 412.47128pt x 158.16591pt>
 File: divergencia.pdf Graphic file (type pdf)
 <use divergencia.pdf>
-Package pdftex.def Info: divergencia.pdf  used on input line 140.
+Package pdftex.def Info: divergencia.pdf  used on input line 145.
 (pdftex.def)             Requested size: 329.97746pt x 126.53288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 [5 </home/agustina/Documentos/ib/IB/divergencia.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 182.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 182.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-/home/agustina/Documentos/ib/IB/resumen.tex:193: LaTeX Error: \begin{itemize} on input line 119 ended by \end{document}.
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+[6]
+
+/home/agustina/Documentos/ib/IB/resumen.tex:198: LaTeX Error: \begin{itemize} on input line 119 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \end{document}
+l.198 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[6] (/home/agustina/Documentos/ib/IB/resumen.aux
+[7] (/home/agustina/Documentos/ib/IB/resumen.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) )
@@ -734,16 +739,16 @@ LaTeX Info: Redefining \% on input line 6.
 Here is how much of TeX's memory you used:
  4997 strings out of 492982
  64882 string characters out of 6134896
- 160885 words of memory out of 5000000
+ 161885 words of memory out of 5000000
  8451 multiletter control sequences out of 15000+600000
  13670 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,43p,492b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on /home/agustina/Documentos/ib/IB/resumen.pdf (6 pages, 314891 bytes).
+Output written on /home/agustina/Documentos/ib/IB/resumen.pdf (7 pages, 316415 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
