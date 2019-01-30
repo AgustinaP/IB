@@ -40,6 +40,7 @@
       \begin{itemize}
 
         \item[$+$] Nadia A. Pizarro.
+        \item[$+$] Matías D. Roqueta.
 
       \end{itemize}
 
@@ -194,6 +195,7 @@ $$T(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x
 $$ C(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x}-x_0) + {f_{\textcolor{red}{y}}(x_0, y_0)}(\textcolor{red}{y}-y_0)+\frac{1}{2} \cdot f_{\textcolor{blue}{xx}}(x_0, y_0)(\textcolor{blue}{x}-x_0)+ \cdots $$
   $$\cdots + f_{\textcolor{red}{y}\textcolor{blue}{x}}(x_0, y_0)(\textcolor{blue}{x}-x_0)(\textcolor{red}{y}-y_0)+ \frac{1}{2} \cdot {f_{\textcolor{red}{yy}}(x_0, y_0)}(\textcolor{red}{y}-y_0) $$
 
+\newpage
 
 \section{Mecánica Clásica}
 \textbf{Ley de Newton:} La sumatoria de fuerzas sobre un cuerpo equivale a la variación de su momento lineal respecto al tiempo.\\
@@ -238,11 +240,27 @@ Existen dos formas de tener momento angular, intrínseco y orbital. El momento a
 El momento angular total de un cuerpo o sistema resulta la suma de ambas formas de momento angular, siempre manteniendo consistente el eje de referencia: $\displaystyle \vec{L}=\vec{L}_{spin}+\vec{L}_{orbit}$
 
 
-<INSERTAR COSAS DE ENERGÍA MECÁNICA>
+<INSERTAR COSAS DE ENERGÍA MECÁNICA> \\
 
 
+\textbf{Movimiento Oscilatorio Armónico Simple:} La ecuación que define un movimiento oscilatorio es una ecuación diferencial ordinaria de segundo orden de la siguiente forma:
+$$\dfrac{d^2y(t)}{dt^2} + A y(t) = 0$$
 
+Los sistemas oscilatorios armónicos simples son aquellos en los que ejerce trabajo únicamente una fuerza conservativa de acción restitutiva, actuando hacia una posición de equilibrio inversamente proporcional a la posición.\\
 
+La solución es conocida, y es de la forma 
+$$y(t) = A \sin\left(\omega_0t+\phi\right)$$
+Resolviendo la ecuación se puede encuentra la frecuencia natural del sistema oscilatorio $\omega_0$, y de las condiciones iniciales saldrán la amplitud y fase, $A$ y $\phi$. \\
+
+\textbf{Energía del Sistema Oscilatorio:} Por teorema de conservación de la energía, se encuentra que la \textcolor{green}{energía mecánica} total del oscilador permanece constante. Se manifiesta únicamente un intercambio entre \textcolor{blue}{energía potencial} y \textcolor{red}{energía cinética}. Esta propiedad facilita cualquier cálculo de tipo energético.   
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[scale=0.8]{energOscil.eps}
+		\caption{Representación gráfica de energía en un oscilador mecánico}
+		\label{fig:divergencia}
+	\end{center}
+\end{figure}
 
 
 \end{document}
