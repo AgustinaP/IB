@@ -5,6 +5,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{titling}
 \usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \date{\small{\today}}
 \usepackage{fancyhdr}
@@ -13,7 +15,8 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{gris}{RGB}{220,220,220}
 
-
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}[]
 
 \begin{document}
 
@@ -58,7 +61,7 @@
 \chead{Sección: \thesection.\thesubsection}
 %\ Pie
 \lfoot{Nadia A. Pizarro.}
-\cfoot{Instituto balseiro} % quitar número de página del centro
+\cfoot{Instituto Balseiro} % quitar número de página del centro
 \rfoot{\thepage} % número de página a la derecha
 \renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
 \renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
@@ -204,9 +207,21 @@ Solo en el caso de masa invariante en el tiempo la expresión se reduce a $\sum 
 
 Análogamente, la sumatoria de torque sobre un cuerpo equivale a la variación temporal de su momento angular, en caso de momento de momento de inercia invariante en el tiempo reducida a $\sum {\vec{T}} = I \, \vec{\alpha}$\\
 
+\textbf{Momento de Inercia:} Así como la masa cuantifica la dificultad de alterar el estado de movimiento de un cuerpo, el momento de inercia cuantifica su resistencia a cambiar su estado de movimiento rotacional \emph{respecto a un determinado eje}. La fórmula general para encontrarlo para un cuerpo cualquiera con densidad volumétrica $\rho(\vec r)$ es.
+$$I_0 = \int_{V}r^2 \, \rho(\vec{r})\, dV$$
+Los momentos de inercia baricéntricos de los rígidos de masa uniforme mas comunes son conocidos.\\
 
+\textbf{Torque o Momento de Fuerza: } Es el resultado de un \textcolor{blue}{par de fuerzas} paralelas, de igual módulo, y sentido contrario.
+Siendo la distancia-vector entre los puntos de aplicación de las dos fuerzas $\vec{r}$, se cumple.
+$$\vec{T}=\vec{r}\times\vec{F}$$
+En muchas ocasiones, una de estas fuerzas es la llamada \textcolor{blue}{fuerza de vínculo}, la fuerza que ejerce un eje de rotación fijo sobre un cuerpo para impedir su desplazamiento.\\
 
-\textbf{Leyes de Conservación:} En todo sistema mecánico considerando un intervalo temporal arbitrario se cumplen las siguientes leyes de conservación.
+\textbf{Teorema de Steiner:} Si se conoce el momento de inercia de un cuerpo rígido respecto a su eje baricéntrico $I_0$, el teorema de Steiner establece su momento de inercia respecto a cualquier otro eje paralelo a este a una distancia $r'$.
+$$I = I_0 + m \, r'^2$$
+
+\subsection{Leyes de Conservación} 
+En todo sistema mecánico considerando un intervalo temporal arbitrario $\Delta t$ se cumplen las siguientes leyes de conservación.\\
+
 \begin{itemize}
 	\item \textbf{Ley de Conservación de la Energía Mecánica}. La sumatoria de trabajo ejercido por \textcolor{red}{fuerzas no conservativas} es igual a la variación de energía mecánica del sistema. $$\sum{W_{F_{NC}}} = \Delta E_M$$.
 	\item \textbf{Ley de Conservación del Momento Lineal}. La sumatoria de impulso lineal ejercido sobre el sistema por \textcolor{blue}{fuerzas externas} es igual a la variación del momento lineal del sistema. $$\sum{\vec{J}_{F_{ext}}} = \Delta \vec{p}$$.
@@ -243,7 +258,8 @@ El momento angular total de un cuerpo o sistema resulta la suma de ambas formas 
 <INSERTAR COSAS DE ENERGÍA MECÁNICA> \\
 
 
-\textbf{Movimiento Oscilatorio Armónico Simple:} La ecuación que define un movimiento oscilatorio es una ecuación diferencial ordinaria de segundo orden de la siguiente forma:
+\subsection{Movimiento Oscilatorio Armónico Simple} 
+La ecuación que define un movimiento oscilatorio es una ecuación diferencial ordinaria de segundo orden de la siguiente forma:
 $$\dfrac{d^2y(t)}{dt^2} + A y(t) = 0$$
 
 Los sistemas oscilatorios armónicos simples son aquellos en los que ejerce trabajo únicamente una fuerza conservativa de acción restitutiva, actuando hacia una posición de equilibrio inversamente proporcional a la posición.\\
