@@ -1,3 +1,5 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}An\IeC {\'a}lisis Matem\IeC {\'a}tico}{3}
-\contentsline {section}{\numberline {2}Mec\IeC {\'a}nica Cl\IeC {\'a}sica}{6}
+\contentsline {section}{\numberline {2}Mec\IeC {\'a}nica Cl\IeC {\'a}sica}{7}
+\contentsline {subsection}{\numberline {2.1}Leyes de Conservaci\IeC {\'o}n}{8}
+\contentsline {subsection}{\numberline {2.2}Movimiento Oscilatorio Arm\IeC {\'o}nico Simple}{10}

@@ -5,6 +5,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{titling}
 \usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \date{\small{\today}}
 \usepackage{fancyhdr}
@@ -13,7 +15,8 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{gris}{RGB}{220,220,220}
 
-
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}[]
 
 \begin{document}
 
@@ -40,6 +43,7 @@
       \begin{itemize}
 
         \item[$+$] Nadia A. Pizarro.
+        \item[$+$] Matías D. Roqueta.
 
       \end{itemize}
 
@@ -56,8 +60,8 @@
 \rhead{Ingreso 2019} % Logo
 \chead{Sección: \thesection.\thesubsection}
 %\ Pie
-\lfoot{Nadia A. Pizarro.}
-\cfoot{Instituto balseiro} % quitar número de página del centro
+\lfoot{Nadia A. Pizarro. \\ Matías D. Roqueta}
+\cfoot{Instituto Balseiro} % quitar número de página del centro
 \rfoot{\thepage} % número de página a la derecha
 \renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
 \renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
@@ -152,7 +156,7 @@ Hess =
 \end{bmatrix}
 $$
 \\
-Se calcula el determinante de la matriz, evaluado en el punto crítico entonces:
+Se calcula el determinante de la matriz, evaluado en el punto crítico entonces:Ay 
 \begin{itemize}
 \item Si $det(Hess) > 0$ hay un extremo.  En ese caso si $Hes_{11} = \dfrac{\partial ^2 z}{\partial x^2} \textcolor{violet}{>} 0$ hay un \textcolor{violet}{mínimo} relativo.  En cambio si $Hess_{11} =  \dfrac{\partial ^2 z}{\partial y^2} \textcolor{green}{<} 0$ hay un \textcolor{green}{máximo} relativo. \textcolor{red}{Atención!!} Los signos no son intuitivos, estan intercalados.
 
@@ -162,7 +166,7 @@ Se calcula el determinante de la matriz, evaluado en el punto crítico entonces:
 \end{itemize}
 
 
-  \textbf{Divergencia:} cambio de densidad en el movimiento de una partícula. Se define con la eq:
+\textbf{Divergencia:} cambio de densidad en el movimiento de una partícula. Se define con la eq:
  $ \nabla  \cdot \vec{V} = Div \vec{V}$. En la figura \ref{fig:divergencia} se puede observar que quiere decir el escalar que nos dá de resultado.\\
 
  \begin{figure}[htbp]
@@ -195,6 +199,7 @@ $$T(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x
 $$ C(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x}-x_0) + {f_{\textcolor{red}{y}}(x_0, y_0)}(\textcolor{red}{y}-y_0)+\frac{1}{2} \cdot f_{\textcolor{blue}{xx}}(x_0, y_0)(\textcolor{blue}{x}-x_0)^2+ \cdots $$
   $$\cdots + f_{\textcolor{red}{y}\textcolor{blue}{x}}(x_0, y_0)(\textcolor{blue}{x}-x_0)(\textcolor{red}{y}-y_0)+ \frac{1}{2} \cdot {f_{\textcolor{red}{yy}}(x_0, y_0)}(\textcolor{red}{y}-y_0)^2 $$
 
+\newpage
 
 \section{Mecánica Clásica}
 \textbf{Ley de Newton:} La sumatoria de fuerzas sobre un cuerpo equivale a la variación de su momento lineal respecto al tiempo.\\
@@ -203,9 +208,29 @@ Solo en el caso de masa invariante en el tiempo la expresión se reduce a $\sum 
 
 Análogamente, la sumatoria de torque sobre un cuerpo equivale a la variación temporal de su momento angular, en caso de momento de momento de inercia invariante en el tiempo reducida a $\sum {\vec{T}} = I \, \vec{\alpha}$\\
 
+\textbf{Momento de Inercia:} Así como la masa cuantifica la dificultad de alterar el estado de movimiento de un cuerpo, el momento de inercia cuantifica su resistencia a cambiar su estado de movimiento rotacional \emph{respecto a un determinado eje}. La fórmula general para encontrarlo para un cuerpo cualquiera con densidad volumétrica $\rho(\vec r)$ es.
+$$I_0 = \int_{V}r^2 \, \rho(\vec{r})\, dV$$
+Los momentos de inercia baricéntricos de los rígidos de masa uniforme mas comunes son conocidos.\\
 
+\textbf{Torque o Momento de Fuerza: } Es el resultado de un \textcolor{blue}{par de fuerzas} paralelas, de igual módulo, y sentido contrario.
+Siendo la distancia-vector entre los puntos de aplicación de las dos fuerzas $\vec{r}$, se cumple.
+$$\vec{T}=\vec{r}\times\vec{F}$$
+En muchas ocasiones, una de estas fuerzas es la llamada \textcolor{blue}{fuerza de vínculo}, la fuerza que ejerce un eje de rotación fijo sobre un cuerpo para impedir su desplazamiento.\\
 
-\textbf{Leyes de Conservación:} En todo sistema mecánico considerando un intervalo temporal arbitrario se cumplen las siguientes leyes de conservación.
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{torque.eps}
+		\caption{Dos posibles ejemplos de torque. A la derecha, un par de fuerzas independientes iguales y contrarias actuando sobre un rígido. A la derecha una fuerza externa actuando sobre un rígido fijo en un eje y la fuerza de vínculo.}
+		\label{fig:torque}
+	\end{center}
+\end{figure}
+
+\textbf{Teorema de Steiner:} Si se conoce el momento de inercia de un cuerpo rígido respecto a su eje baricéntrico $I_0$, el teorema de Steiner establece su momento de inercia respecto a cualquier otro eje paralelo a este a una distancia $r'$.
+$$I = I_0 + m \, r'^2$$
+
+\subsection{Leyes de Conservación} 
+En todo sistema mecánico considerando un intervalo temporal arbitrario $\Delta t$ se cumplen las siguientes leyes de conservación.\\
+
 \begin{itemize}
 	\item \textbf{Ley de Conservación de la Energía Mecánica}. La sumatoria de trabajo ejercido por \textcolor{red}{fuerzas no conservativas} es igual a la variación de energía mecánica del sistema. $$\sum{W_{F_{NC}}} = \Delta E_M$$.
 	\item \textbf{Ley de Conservación del Momento Lineal}. La sumatoria de impulso lineal ejercido sobre el sistema por \textcolor{blue}{fuerzas externas} es igual a la variación del momento lineal del sistema. $$\sum{\vec{J}_{F_{ext}}} = \Delta \vec{p}$$.
@@ -239,11 +264,28 @@ Existen dos formas de tener momento angular, intrínseco y orbital. El momento a
 El momento angular total de un cuerpo o sistema resulta la suma de ambas formas de momento angular, siempre manteniendo consistente el eje de referencia: $\displaystyle \vec{L}=\vec{L}_{spin}+\vec{L}_{orbit}$
 
 
-<INSERTAR COSAS DE ENERGÍA MECÁNICA>
+<INSERTAR COSAS DE ENERGÍA MECÁNICA> \\
 
+\newpage
+\subsection{Movimiento Oscilatorio Armónico Simple} 
+La ecuación que define un movimiento oscilatorio es una ecuación diferencial ordinaria de segundo orden de la siguiente forma:
+$$\dfrac{d^2y(t)}{dt^2} + A y(t) = 0$$
 
+Los sistemas oscilatorios armónicos simples son aquellos en los que ejerce trabajo únicamente una fuerza conservativa de acción restitutiva, actuando hacia una posición de equilibrio inversamente proporcional a la posición.\\
 
+La solución es conocida, y es de la forma 
+$$y(t) = A \sin\left(\omega_0t+\phi\right)$$
+Resolviendo la ecuación se puede encuentra la frecuencia natural del sistema oscilatorio $\omega_0$, y de las condiciones iniciales saldrán la amplitud y fase, $A$ y $\phi$. \\
 
+\textbf{Energía del Sistema Oscilatorio:} Por teorema de conservación de la energía, se encuentra que la \textcolor{green}{energía mecánica} total del oscilador permanece constante. Se manifiesta únicamente un intercambio entre \textcolor{blue}{energía potencial} y \textcolor{red}{energía cinética}. Esta propiedad facilita cualquier cálculo de tipo energético.   
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[scale=0.75]{energOscil.eps}
+		\caption{Representación gráfica de energía en un oscilador mecánico}
+		\label{fig:energOscil}
+	\end{center}
+\end{figure}
 
 
 \end{document}
