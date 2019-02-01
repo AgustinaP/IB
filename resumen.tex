@@ -154,15 +154,12 @@ $$
 \\
 Se calcula el determinante de la matriz, evaluado en el punto crítico entonces:
 \begin{itemize}
-\item Si $det(Hess) > 0$ hay un extremo.  En ese caso si $Hes_{11} = \dfrac{\partial ^2 z}{\partial x^2} > 0$ hay un mínimo relativo.  En cambio si $Hess_{11} =  \dfrac{\partial ^2 z}{\partial y^2} < 0$ hay un máximo relativo.
+\item Si $det(Hess) > 0$ hay un extremo.  En ese caso si $Hes_{11} = \dfrac{\partial ^2 z}{\partial x^2} \textcolor{violet}{>} 0$ hay un \textcolor{violet}{mínimo} relativo.  En cambio si $Hess_{11} =  \dfrac{\partial ^2 z}{\partial y^2} \textcolor{green}{<} 0$ hay un \textcolor{green}{máximo} relativo. \textcolor{red}{Atención!!} Los signos no son intuitivos, estan intercalados.
 
 \item Si $det(Hess) = 0$ el criterio no decide y debemos buscar otra forma de analizar el punto crítico.
 
 \item Si $det(Hess) < 0$ entonces hay un punto silla y por lo tanto no es extremo.
 \end{itemize}
-
-
-
 
 
   \textbf{Divergencia:} cambio de densidad en el movimiento de una partícula. Se define con la eq:
@@ -191,9 +188,12 @@ $$\nabla\times \vec{\textbf{v}}=\left|
 
 \textbf{Teorema fundamental del cálculo:} Dada unafunción $f$ integrable sobre el intervalo $ [a,b]$, definimos $F$ sobre $[a,b]$ por $F(x) = {\int_{a}^x f(t)dt}$. Si $f$ es continua en $c \notin (a,b)$, entonces $F$ es derivable en $c$ y $F'(c) = f(c)$.\\
 
-\textbf{Plano tangente:} La ecuación del plano tangente de la gráfica de una función de dos variables f(x,y) en un punto particular $(x_0, y_0)$ se ve así:
+\textbf{Plano tangente o aproximación lineal:} La ecuación del plano tangente de la gráfica de una función de dos variables f(x,y) en un punto particular $(x_0, y_0)$ se ve así:
 $$T(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x}-x_0) + {f_{\textcolor{red}{y}}(x_0, y_0)}(\textcolor{red}{y}-y_0) $$
 
+\textbf{Aproximación cuadrática:} La ecuación de una función que se aproxima cuadrátcamente a una función de dos variables f(x,y) en un punto particular $(x_0, y_0)$ se ve así:
+$$ C(x, y) = f(x_0, y_0) + {f_{\textcolor{blue}{x}}(x_0, y_0)}(\textcolor{blue}{x}-x_0) + {f_{\textcolor{red}{y}}(x_0, y_0)}(\textcolor{red}{y}-y_0)+\frac{1}{2} \cdot f_{\textcolor{blue}{xx}}(x_0, y_0)(\textcolor{blue}{x}-x_0)^2+ \cdots $$
+  $$\cdots + f_{\textcolor{red}{y}\textcolor{blue}{x}}(x_0, y_0)(\textcolor{blue}{x}-x_0)(\textcolor{red}{y}-y_0)+ \frac{1}{2} \cdot {f_{\textcolor{red}{yy}}(x_0, y_0)}(\textcolor{red}{y}-y_0)^2 $$
 
 
 \section{Mecánica Clásica}
