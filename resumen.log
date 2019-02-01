@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.27)  1 FEB 2019 02:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.27)  1 FEB 2019 02:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -470,10 +470,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
  []
 
 Package epstopdf Info: Source file: <torque.eps>
-(epstopdf)                    date: 2019-02-01 01:55:57
+(epstopdf)                    date: 2019-02-01 02:07:57
 (epstopdf)                    size: 11979 bytes
 (epstopdf)             Output file: <torque-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-01 01:59:45
+(epstopdf)                    date: 2019-02-01 02:07:57
 (epstopdf)                    size: 6370 bytes
 (epstopdf)             Command: <repstopdf --outfile=torque-eps-converted-to.pd
 f torque.eps>
@@ -525,10 +525,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--278
  []
 
 Package epstopdf Info: Source file: <energOscil.eps>
-(epstopdf)                    date: 2019-01-29 23:37:21
+(epstopdf)                    date: 2019-02-01 02:07:57
 (epstopdf)                    size: 22954 bytes
 (epstopdf)             Output file: <energOscil-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-01-29 23:37:32
+(epstopdf)                    date: 2019-02-01 02:07:57
 (epstopdf)                    size: 9940 bytes
 (epstopdf)             Command: <repstopdf --outfile=energOscil-eps-converted-t
 o.pdf energOscil.eps>
@@ -547,7 +547,7 @@ LaTeX Info: Redefining \% on input line 6.
 Here is how much of TeX's memory you used:
  5075 strings out of 492639
  66382 string characters out of 6135497
- 172940 words of memory out of 5000000
+ 173940 words of memory out of 5000000
  8857 multiletter control sequences out of 15000+600000
  13977 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -563,7 +563,7 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on resumen.pdf (10 pages, 340518 bytes).
+Output written on resumen.pdf (10 pages, 340814 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
